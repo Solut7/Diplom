@@ -26,7 +26,7 @@ public class HelloApplication extends Application {
     }
     public static void CreateWindow() throws IOException {
         FXMLLoader fxmlLoader1 = new FXMLLoader(HelloApplication.class.getResource("Create.fxml"));
-        Scene scene1 = new Scene(fxmlLoader1.load(),580,420);
+        Scene scene1 = new Scene(fxmlLoader1.load(),780,820);
         Stage stg = new Stage();
         stg.setTitle("Создать");
         stg.setScene(scene1);
@@ -34,7 +34,7 @@ public class HelloApplication extends Application {
     }
     public static void ChangeWindow() throws IOException {
         FXMLLoader fxmlLoader1 = new FXMLLoader(HelloApplication.class.getResource("Change.fxml"));
-        Scene scene1 = new Scene(fxmlLoader1.load(),580,420);
+        Scene scene1 = new Scene(fxmlLoader1.load(),780,820);
         Stage stg = new Stage();
         stg.setTitle("Изменить");
         stg.setScene(scene1);
@@ -42,7 +42,7 @@ public class HelloApplication extends Application {
     }
     public static void OpenWindow() throws IOException {
         FXMLLoader fxmlLoader1 = new FXMLLoader(HelloApplication.class.getResource("OpenWindow.fxml"));
-        Scene scene1 = new Scene(fxmlLoader1.load(),580,420);
+        Scene scene1 = new Scene(fxmlLoader1.load(),620,620);
         Stage stg = new Stage();
         stg.setTitle("Изменить");
         stg.setScene(scene1);
@@ -50,7 +50,7 @@ public class HelloApplication extends Application {
     }
     public static void AnalysWindow() throws IOException {
         FXMLLoader fxmlLoader1 = new FXMLLoader(HelloApplication.class.getResource("Analys.fxml"));
-        Scene scene1 = new Scene(fxmlLoader1.load(),580,420);
+        Scene scene1 = new Scene(fxmlLoader1.load(),620,580);
         Stage stg = new Stage();
         stg.setTitle("Анализ");
         stg.setScene(scene1);
