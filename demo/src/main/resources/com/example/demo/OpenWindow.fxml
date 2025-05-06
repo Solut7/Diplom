@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.OpenController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="Name" fx:id="Name" layoutX="260.0" layoutY="14.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Pane layoutX="11.0" layoutY="45.0" prefHeight="344.0" prefWidth="189.0">
+         <children>
+            <Label layoutX="59.0" layoutY="17.0" text="Клиенты">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="41.0" text="Количество клиентов" />
+            <Label layoutX="9.0" layoutY="73.0" text="Новые" />
+            <Label layoutX="8.0" layoutY="102.0" text="Ушедшие" />
+            <Label layoutX="8.0" layoutY="134.0" text="Активные" />
+            <Label layoutX="8.0" layoutY="164.0" text="Посетители" />
+            <Label layoutX="8.0" layoutY="195.0" text="Конвертируемые" />
+            <Label layoutX="9.0" layoutY="226.0" text="Период сотрудничества" />
+            <Label id="ClientsAmount" fx:id="ClientsAmount" layoutX="142.0" layoutY="41.0" />
+            <Label id="NewClients" fx:id="NewClients" layoutX="63.0" layoutY="73.0" />
+            <Label id="LeftClients" fx:id="LeftClients" layoutX="75.0" layoutY="102.0" />
+            <Label id="ActiveClients" fx:id="ActiveClients" layoutX="85.0" layoutY="134.0" />
+            <Label id="Visitors" fx:id="Visitors" layoutX="94.0" layoutY="164.0" />
+            <Label id="Converted" fx:id="Converted" layoutX="119.0" layoutY="196.0" />
+            <Label id="Period" fx:id="Period" layoutX="155.0" layoutY="227.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="211.0" layoutY="48.0" prefHeight="344.0" prefWidth="189.0">
+         <children>
+            <Label layoutX="58.0" layoutY="14.0" text="Расходы">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="41.0" text="На маркетинг" />
+            <Label layoutX="9.0" layoutY="73.0" text="На продажи" />
+            <Label layoutX="8.0" layoutY="102.0" text="На разработку" />
+            <Label layoutX="8.0" layoutY="134.0" text="На прототипы" />
+            <Label layoutX="7.0" layoutY="164.0" text="Общие" />
+            <Label id="MarketingExp" fx:id="MarketingExp" layoutX="98.0" layoutY="41.0" />
+            <Label id="SellExp" fx:id="SellExp" layoutX="108.0" layoutY="74.0" />
+            <Label id="DevelopExp" fx:id="DevelopExp" layoutX="117.0" layoutY="103.0" />
+            <Label id="ProtoExp" fx:id="ProtoExp" layoutX="112.0" layoutY="132.0" />
+            <Label id="AllExp" fx:id="AllExp" layoutX="68.0" layoutY="164.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="383.0" layoutY="48.0" prefHeight="344.0" prefWidth="189.0">
+         <children>
+            <Label layoutX="60.0" layoutY="14.0" text="Доходы">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="75.0" text="От продаж" />
+            <Label layoutX="26.0" layoutY="44.0" text="От подписок" />
+            <Label layoutX="23.0" layoutY="105.0" text="От InApp покупок" />
+            <Label layoutX="23.0" layoutY="135.0" text="Общие" />
+            <Label id="SubInc" fx:id="SubInc" layoutX="107.0" layoutY="44.0" />
+            <Label id="SellInc" fx:id="SellInc" layoutX="113.0" layoutY="75.0" />
+            <Label id="InApp" fx:id="InApp" layoutX="140.0" layoutY="105.0" />
+            <Label id="AllInc" fx:id="AllInc" layoutX="82.0" layoutY="135.0" />
+         </children>
+      </Pane>
+      <Label layoutX="14.0" layoutY="392.0" text="Ключевые метрики">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Pane layoutX="21.0" layoutY="419.0" prefHeight="200.0" prefWidth="525.0">
+         <children>
+            <Label layoutX="14.0" layoutY="24.0" text="Стоимость привлечения клиента" />
+            <Label layoutX="14.0" layoutY="59.0" text="Ценность клиента" />
+            <Label layoutX="14.0" layoutY="92.0" text="Коэффициент оттока" />
+            <Label layoutX="256.0" layoutY="24.0" text="Коэффициент удержания" />
+            <Label layoutX="257.0" layoutY="59.0" text="Коэффициент конверсии" />
+            <Label layoutX="14.0" layoutY="127.0" text="Возврат на инвестиции" />
+            <Label layoutX="257.0" layoutY="92.0" text="Средний доход на одного пользователя" />
+            <Label id="CAC" fx:id="CAC" layoutX="202.0" layoutY="24.0" />
+            <Label id="LTV" fx:id="LTV" layoutX="142.0" layoutY="59.0" />
+            <Label id="CR" fx:id="CR" layoutX="152.0" layoutY="93.0" />
+            <Label id="ROI" fx:id="ROI" layoutX="162.0" layoutY="128.0" />
+            <Label id="RR" fx:id="RR" layoutX="422.0" layoutY="25.0" />
+            <Label id="ConvR" fx:id="ConvR" layoutX="421.0" layoutY="60.0" />
+            <Label id="ARPU" fx:id="ARPU" layoutX="495.0" layoutY="93.0" />
+            <Button id="CloseButt" fx:id="CloseButt" layoutX="452.0" layoutY="161.0" mnemonicParsing="false" onAction="#Close" text="Close" />
+               <Button id="Load" fx:id="Load" layoutX="354.0" layoutY="161.0" mnemonicParsing="false" onAction="#Load" text="Отобразить" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
+</VBox>

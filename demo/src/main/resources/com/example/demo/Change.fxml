@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AlterController">
+    <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="778.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <Label layoutX="337.0" layoutY="11.0" text="Внести изменения">
+                <font>
+                    <Font size="14.0" />
+                </font>
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets>
+            </Label>
+            <Pane layoutX="43.0" layoutY="44.0" prefHeight="370.0" prefWidth="244.0" style="-fx-background-color: grey; -fx-background-radius: 10; -fx-border-width: 3; -fx-border-color: black;">
+                <children>
+                    <Label layoutX="85.0" layoutY="14.0" style="-fx-background-color: white; -fx-border-color: black;" text="Клиенты">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </Label>
+                    <Label layoutX="16.0" layoutY="53.0" text="Количество клиентов">
+                        <graphic>
+                            <TextField id="ClientsAmount" fx:id="ClientsAmount" prefHeight="25.0" prefWidth="49.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="15.0" layoutY="96.0" text="Новые клиенты">
+                        <graphic>
+                            <TextField id="NewClients" fx:id="NewClients" prefHeight="25.0" prefWidth="49.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="15.0" layoutY="137.0" text="Ушедшие клиенты">
+                        <graphic>
+                            <TextField id="LeftClients" fx:id="LeftClients" prefHeight="25.0" prefWidth="49.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="14.0" layoutY="178.0" text="Активные клиенты">
+                        <graphic>
+                            <TextField id="ActiveClients" fx:id="ActiveClients" prefHeight="25.0" prefWidth="49.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="14.0" layoutY="218.0" text="Посетители">
+                        <graphic>
+                            <TextField id="Visitors" fx:id="Visitors" prefHeight="25.0" prefWidth="49.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="15.0" layoutY="255.0" text="Конвертируемые">
+                        <graphic>
+                            <TextField id="Converted" fx:id="Converted" prefHeight="25.0" prefWidth="49.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="15.0" layoutY="297.0" text="Период сотрудничестова(мес)">
+                        <graphic>
+                            <TextField id="Period" fx:id="Period" prefHeight="25.0" prefWidth="47.0" />
+                        </graphic>
+                    </Label>
+                </children>
+            </Pane>
+            <Pane layoutX="295.0" layoutY="44.0" prefHeight="370.0" prefWidth="227.0" style="-fx-background-color: grey; -fx-background-radius: 10; -fx-border-width: 3; -fx-border-color: black;">
+                <children>
+                    <Label layoutX="85.0" layoutY="14.0" style="-fx-background-color: white; -fx-border-color: black;" text="Расходы">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </Label>
+                    <Label layoutX="16.0" layoutY="53.0" text="Расходы на маркетинг">
+                        <graphic>
+                            <TextField id="MarketingExp" fx:id="MarketingExp" prefHeight="25.0" prefWidth="49.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="16.0" layoutY="103.0" text="Расходы на продажи">
+                        <graphic>
+                            <TextField id="SellExp" fx:id="SellExp" prefHeight="25.0" prefWidth="49.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="16.0" layoutY="153.0" text="Расходы на разработку">
+                        <graphic>
+                            <TextField id="DevelopExp" fx:id="DevelopExp" prefHeight="25.0" prefWidth="49.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="15.0" layoutY="204.0" text="Расходы на прототипы">
+                        <graphic>
+                            <TextField id="ProtoExp" fx:id="ProtoExp" prefHeight="25.0" prefWidth="49.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="14.0" layoutY="253.0" text="Общие расходы">
+                        <graphic>
+                            <TextField id="AllExp" fx:id="AllExp" prefHeight="25.0" prefWidth="49.0" />
+                        </graphic>
+                    </Label>
+                </children>
+            </Pane>
+            <Pane layoutX="523.0" layoutY="44.0" prefHeight="370.0" prefWidth="244.0" style="-fx-background-color: grey; -fx-background-radius: 10; -fx-border-width: 3; -fx-border-color: black;">
+                <children>
+                    <Label layoutX="85.0" layoutY="14.0" style="-fx-background-color: white; -fx-border-color: black;" text="Доходы">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </Label>
+                    <Label layoutX="16.0" layoutY="53.0" text="От подписок(мес)">
+                        <graphic>
+                            <TextField id="SubInc" fx:id="SubInc" prefHeight="25.0" prefWidth="49.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="16.0" layoutY="103.0" text="От продаж">
+                        <graphic>
+                            <TextField id="SellInc" fx:id="SellInc" prefHeight="25.0" prefWidth="49.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="16.0" layoutY="153.0" text="От InApp покупок">
+                        <graphic>
+                            <TextField id="InApp" fx:id="InApp" prefHeight="25.0" prefWidth="49.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="15.0" layoutY="204.0" text="Общие доходы">
+                        <graphic>
+                            <TextField id="AllInc" fx:id="AllInc" prefHeight="25.0" prefWidth="49.0" />
+                        </graphic>
+                    </Label>
+               <Button id="InitButt" fx:id="InitButt" layoutX="167.0" layoutY="327.0" mnemonicParsing="false" onAction="#Initialize" style="-fx-background-color: red;" text="Ок" />
+               <Button id="Load" fx:id="Load" layoutX="87.0" layoutY="327.0" mnemonicParsing="false" onAction="#Load" text="Загрузить" />
+                </children>
+            </Pane>
+            <Pane layoutX="40.0" layoutY="430.0" prefHeight="319.0" prefWidth="724.0" style="-fx-background-color: grey; -fx-background-radius: 10; -fx-border-width: 5; -fx-border-color: black;">
+                <children>
+                    <Label layoutX="33.0" layoutY="23.0" style="-fx-background-color: White; -fx-border-color: black;" text="Рассчетные данные">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </Label>
+                    <Label layoutX="33.0" layoutY="66.0" text="Стоимость привлечения клиента">
+                        <graphic>
+                            <TextField id="CAC" fx:id="CAC" prefHeight="25.0" prefWidth="47.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="33.0" layoutY="127.0" text="Ценность клиента">
+                        <graphic>
+                            <TextField id="LTV" fx:id="LTV" prefHeight="25.0" prefWidth="47.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="33.0" layoutY="186.0" text="Коэффициент оттока клиентов">
+                        <graphic>
+                            <TextField id="CR" fx:id="CR" prefHeight="25.0" prefWidth="47.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="329.0" layoutY="66.0" text="Коэффициент удержания клиентов">
+                        <graphic>
+                            <TextField id="RR" fx:id="RR" prefHeight="25.0" prefWidth="47.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="329.0" layoutY="127.0" text="Коэффициент конверсии">
+                        <graphic>
+                            <TextField id="ConvR" fx:id="ConvR" prefHeight="25.0" prefWidth="47.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="33.0" layoutY="255.0" text="Возврат на инвестиции">
+                        <graphic>
+                            <TextField id="ROI" fx:id="ROI" prefHeight="25.0" prefWidth="47.0" />
+                        </graphic>
+                    </Label>
+                    <Label layoutX="329.0" layoutY="186.0" text="Средний доход на одного пользователя">
+                        <graphic>
+                            <TextField id="ARPU" fx:id="ARPU" prefHeight="25.0" prefWidth="47.0" />
+                        </graphic>
+                    </Label>
+                    <Button id="Count" fx:id="Count" layoutX="291.0" layoutY="21.0" mnemonicParsing="false" onAction="#CountStuff" style="-fx-background-color: red;" text="Рассчитать" />
+                    <Button id="Save" fx:id="Save" layoutX="437.0" layoutY="21.0" mnemonicParsing="false" onAction="#SaveStuff" style="-fx-background-color: red;" text="Сохранить" />
+                    <Button id="CloseButt" fx:id="CloseButt" layoutX="622.0" layoutY="268.0" mnemonicParsing="false" onAction="#Close" text="Выйти" />
+                </children>
+            </Pane>
+         <Label layoutX="55.0" layoutY="8.0" text="Название">
+            <graphic>
+               <TextField id="Name" fx:id="Name" prefHeight="25.0" prefWidth="98.0" />
+            </graphic>
+         </Label>
+         <Label id="ErrorField" fx:id="ErrorField" layoutX="602.0" layoutY="13.0" />
+        </children>
+    </Pane>
+</VBox>

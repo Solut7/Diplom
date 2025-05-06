@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AnalysController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="MetrikMenu" layoutX="34.0" layoutY="37.0" prefHeight="354.0" prefWidth="200.0" />
+      <LineChart id="Graph" fx:id="Graph" layoutX="253.0" layoutY="53.0" prefHeight="354.0" prefWidth="387.0">
+        <xAxis>
+          <CategoryAxis id="CategoryAxe" fx:id="CategoryAxe" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis id="NumberAxe" fx:id="NumberAxe" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label layoutX="34.0" layoutY="14.0" text="Показатели" />
+      <Label layoutX="296.0" layoutY="14.0" text="График" />
+         <Button id="Close" fx:id="Close" layoutX="571.0" layoutY="414.0" mnemonicParsing="false" onAction="#Close" text="Выйти" />
+         <Button id="Init" fx:id="Init" layoutX="34.0" layoutY="402.0" mnemonicParsing="false" onAction="#Init" text="Загрузка" />
+   </children>
+</Pane>
+    </VBox>
